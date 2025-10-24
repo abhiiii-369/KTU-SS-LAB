@@ -24,16 +24,15 @@ It performs:
 Loads the object program into memory at an absolute address without relocation.  
 It assumes the program starts at a fixed location.
 
-**File:** `absolute_loader.c`
+**File:** `absolute.c`
 
 #### **2. Relocating Loader**
 Loads programs that can be placed at any memory location.  
 It adjusts addresses in the object program based on the actual load address.
 
-**File:** `relocating_loader.c`
+**File:** `relocate.c`
 
 ---
 
 
-gcc relocating_loader.c -o rel_loader
-./rel_loader
+
